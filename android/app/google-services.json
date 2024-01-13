@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "627646694541",
+    "project_id": "cipherschoolsflutterassignment",
+    "storage_bucket": "cipherschoolsflutterassignment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627646694541:android:5fcc0686a4de0a460d4ec4",
+        "android_client_info": {
+          "package_name": "com.example.cipherx"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsYTLZngBgNciGFKrGXftvUuKGJhj4ehc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
