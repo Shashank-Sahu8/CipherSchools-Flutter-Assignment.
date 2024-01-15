@@ -1,5 +1,6 @@
 import 'package:cipherx/Authentications/Signup.dart';
 import 'package:cipherx/Pages/Home.dart';
+import 'package:cipherx/Pages/bottom_navigator.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,7 @@ class islogein extends StatelessWidget {
         stream: FirebaseAuth.instance.authStateChanges(),
         builder: (context, snapshort) {
           if (snapshort.hasData) {
-            return home();
+            return bottom_navigator();
           } else {
             return sign_up();
           }

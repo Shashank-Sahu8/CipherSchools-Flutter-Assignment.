@@ -69,7 +69,7 @@ class _loginState extends State<login> {
                           ),
                           Image(
                               image: AssetImage(
-                                'assets/Illustration (1).png',
+                                'assets/log.png',
                               ),
                               height: 150),
                           SizedBox(
