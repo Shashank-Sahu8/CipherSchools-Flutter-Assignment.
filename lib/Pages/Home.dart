@@ -47,7 +47,6 @@ class _homeState extends State<home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffF6F6F6),
       body: Container(
         child: Column(
           children: [
@@ -215,7 +214,6 @@ class _homeState extends State<home> {
               padding:
                   const EdgeInsets.only(left: 14.0, right: 14.0, bottom: 14.0),
               child: Container(
-                  color: Color(0xffF6F6F6),
                   child: DefaultTabController(
                       length: 4,
                       child: Column(
@@ -263,44 +261,41 @@ class _homeState extends State<home> {
                             SizedBox(
                               height: 310,
                               child: TabBarView(children: [
-                                Column(
-                                  children: [
-                                    Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Text(
-                                          'Recent Transaction',
-                                          style: TextStyle(
-                                              fontSize: 18,
-                                              fontWeight: FontWeight.w600),
-                                        ),
-                                        ElevatedButton(
-                                            onPressed: () {},
-                                            style: ElevatedButton.styleFrom(
-                                                elevation: 0.7,
-                                                backgroundColor:
-                                                    Color(0xffEEE5FF),
-                                                shape: RoundedRectangleBorder(
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            40))),
-                                            child: Text(
-                                              'See All',
-                                              style: TextStyle(
-                                                  fontWeight: FontWeight.w500,
-                                                  fontSize: 14,
-                                                  color: Color(0xff7F3DFF)),
-                                            ))
-                                      ],
-                                    ),
-                                    SizedBox(
-                                      height: 10,
-                                    ),
-                                    Container(
-                                      child: Text('uks'),
-                                    )
-                                  ],
+                                SingleChildScrollView(
+                                  scrollDirection: Axis.vertical,
+                                  child: Column(
+                                    children: [
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Text(
+                                            'Recent Transaction',
+                                            style: TextStyle(
+                                                fontSize: 18,
+                                                fontWeight: FontWeight.w600),
+                                          ),
+                                          ElevatedButton(
+                                              onPressed: () {},
+                                              style: ElevatedButton.styleFrom(
+                                                  elevation: 0.7,
+                                                  backgroundColor:
+                                                      Color(0xffEEE5FF),
+                                                  shape: RoundedRectangleBorder(
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              40))),
+                                              child: Text(
+                                                'See All',
+                                                style: TextStyle(
+                                                    fontWeight: FontWeight.w500,
+                                                    fontSize: 14,
+                                                    color: Color(0xff7F3DFF)),
+                                              ))
+                                        ],
+                                      )
+                                    ],
+                                  ),
                                 ),
                                 SingleChildScrollView(
                                   scrollDirection: Axis.vertical,

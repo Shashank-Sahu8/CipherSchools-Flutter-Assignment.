@@ -106,7 +106,7 @@ class _bottom_navigatorState extends State<bottom_navigator> {
                       icon: const Icon(Icons.close),
                       label: const Text("CANCEL"),
                     ),
-                  ),
+                  )
                 ],
               ),
             ),
