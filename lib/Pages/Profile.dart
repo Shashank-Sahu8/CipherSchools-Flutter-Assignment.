@@ -3,6 +3,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:icons_plus/icons_plus.dart';
+import 'dart:io';
+import 'package:pdf/widgets.dart' as pw;
 
 class Profile extends StatefulWidget {
   const Profile({super.key});
@@ -96,7 +98,7 @@ class _ProfileState extends State<Profile> {
                             builder: (context) {
                               return AlertDialog(
                                   backgroundColor: Color(0xffEEE5FF),
-                                  title: const Text('TextField in Dialog'),
+                                  title: const Text('Name'),
                                   content: TextField(
                                     onChanged: (value) {
                                       setState(() {
@@ -105,7 +107,7 @@ class _ProfileState extends State<Profile> {
                                     },
                                     controller: namecont,
                                     decoration: const InputDecoration(
-                                        hintText: "Text Field in Dialog"),
+                                        hintText: "Your Name"),
                                   ),
                                   actions: <Widget>[
                                     MaterialButton(

@@ -108,7 +108,7 @@ class _sign_upState extends State<sign_up> {
     }
   }
 
-  addfire() async {
+  addfire(bool c) async {
     await FirebaseFirestore.instance
         .collection('User')
         .doc(FirebaseAuth.instance.currentUser!.uid)
@@ -116,9 +116,11 @@ class _sign_upState extends State<sign_up> {
       'uid': FirebaseAuth.instance.currentUser!.uid,
       'name': namecontroller.text.toString(),
       'email': emailcontroller.text.toString(),
-      'imgurl': pickedImage != null
-          ? await _uploadpic()
-          : 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/2048px-User-avatar.svg.png',
+      'imgurl': c != true
+          ? FirebaseAuth.instance.currentUser!.photoURL
+          : pickedImage != null
+              ? await _uploadpic()
+              : 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/2048px-User-avatar.svg.png',
     });
   }
 
@@ -376,7 +378,7 @@ class _sign_upState extends State<sign_up> {
                                           password: passwordcontroller.text
                                               .toString())
                                       .then((value) {
-                                    addfire();
+                                    addfire(true);
                                     Fluttertoast.showToast(
                                         msg: "Account created & Login success",
                                         backgroundColor: Colors.grey,
@@ -430,6 +432,7 @@ class _sign_upState extends State<sign_up> {
                                     );
                                   });
                               await AuthServices().signInWithGoogle();
+                              addfire(false);
                               Navigator.pop(context);
                               await FirebaseFirestore.instance
                                   .collection('User')

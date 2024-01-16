@@ -62,6 +62,7 @@ dependencies:
   shifting_tabbar: ^1.0.2
   container_tab_indicator: ^0.3.0
   icons_launcher: ^2.1.7
+  pdf: ^3.10.7
 
 
 icons_launcher:

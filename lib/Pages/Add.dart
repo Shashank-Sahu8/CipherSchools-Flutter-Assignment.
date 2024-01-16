@@ -12,7 +12,8 @@ const List<String> _list1 = [
   'Subscription',
   'Travel',
   'Food',
-  'Bills'
+  'Bills',
+  'miscellaneous'
 ];
 const List<String> _list2 = [
   'UPI',
@@ -34,17 +35,22 @@ class _addState extends State<addd> {
   String cat = "";
   String wal = "";
   addtask() async {
+    String k = DateTime.now().toString();
     await FirebaseFirestore.instance
         .collection('Money')
         .doc(FirebaseAuth.instance.currentUser!.uid)
         .collection('data')
-        .doc(DateTime.now().toString())
+        .doc(k)
         .set({
       'check': widget.check,
-      'amount': money.text.toString(),
+      'amount': int.parse(money.text),
       'description': descriptionc.text.toString(),
       'Category': cat,
-      'Wallet': wal
+      'Wallet': wal,
+      'month': DateTime.now().month,
+      'date': DateTime.now().day,
+      'year': DateTime.now().year,
+      'time': k
     });
   }
 
@@ -189,6 +195,7 @@ class _addState extends State<addd> {
                               addtask();
                               Fluttertoast.showToast(
                                   msg: "Added", backgroundColor: Colors.grey);
+                              Navigator.pop(context);
                               Navigator.pop(context);
                             },
                             style: ElevatedButton.styleFrom(
