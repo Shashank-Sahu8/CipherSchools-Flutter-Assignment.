@@ -3,11 +3,11 @@
 
       https://drive.google.com/drive/folders/1oSmRVBB7bLR__aVVJz2z5Sw73sRtsysi?usp=drive_link
 
- ![Image 1]([IMAGE_URL_1](https://github-production-user-asset-6210df.s3.amazonaws.com/133399781/333297558-3a3a8698-9aa3-4584-8a14-b777787e5c2a.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240523%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240523T181917Z&X-Amz-Expires=300&X-Amz-Signature=fc31ec6b98e713c086933190e3cd718d5b4dce8ac2463fb837db103a09987b67&X-Amz-SignedHeaders=host&actor_id=133399781&key_id=0&repo_id=742817904)) | ![Image 2]([IMAGE_URL_2](https://github-production-user-asset-6210df.s3.amazonaws.com/133399781/333297540-b841b805-587a-4f5e-ba99-9ad3b5459f2f.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240523%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240523T181858Z&X-Amz-Expires=300&X-Amz-Signature=a850ee253038668af419e1682f95a23ae4c081340c10c5a5bddc4b9ed4e2a25b&X-Amz-SignedHeaders=host&actor_id=133399781&key_id=0&repo_id=742817904)) 
+
 <div class="image-grid">
   <div class="column">
-    <img src="[IMAGE_URL_1]()" alt="Image 1">
-    <img src="[IMAGE_URL_2]()" alt="Image 2">
+    ![TICTACTOEimg1]([https://github.com/Shashank-Sahu8/Tic-Tac-Toe/assets/133399781/9c3aab5d-80ac-43ca-92ee-9b6ebb6966d1](https://github-production-user-asset-6210df.s3.amazonaws.com/133399781/333297558-3a3a8698-9aa3-4584-8a14-b777787e5c2a.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240523%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240523T181917Z&X-Amz-Expires=300&X-Amz-Signature=fc31ec6b98e713c086933190e3cd718d5b4dce8ac2463fb837db103a09987b67&X-Amz-SignedHeaders=host&actor_id=133399781&key_id=0&repo_id=742817904))
+      ![TICTACTOEimg1]([https://github.com/Shashank-Sahu8/Tic-Tac-Toe/assets/133399781/9c3aab5d-80ac-43ca-92ee-9b6ebb6966d1](https://github-production-user-asset-6210df.s3.amazonaws.com/133399781/333297540-b841b805-587a-4f5e-ba99-9ad3b5459f2f.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240523%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240523T181858Z&X-Amz-Expires=300&X-Amz-Signature=a850ee253038668af419e1682f95a23ae4c081340c10c5a5bddc4b9ed4e2a25b&X-Amz-SignedHeaders=host&actor_id=133399781&key_id=0&repo_id=742817904))
   </div>
   <div class="column">
     <img src="[IMAGE_URL_3](https://github-production-user-asset-6210df.s3.amazonaws.com/133399781/333297533-fb58eb9e-9297-4cf3-91de-990a575aa64b.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240523%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240523T181850Z&X-Amz-Expires=300&X-Amz-Signature=01749215fd02146b4a892a2e69d7499d77ad7d2af24ac96f5dea6e60de1b7880&X-Amz-SignedHeaders=host&actor_id=133399781&key_id=0&repo_id=742817904)" alt="Image 3">
@@ -19,16 +19,4 @@
   </div>
 </div>
 
-.image-grid {
-  display: flex;
-}
-
-.column {
-  flex: 1;
-  padding: 10px;
-}
-
-.column img {
-  width: 100%;
-  height: auto;
 }
